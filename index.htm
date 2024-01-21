@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWF Player</title>
+    <title>SWF File Viewer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-
-    <h1>SWF Player</h1>
-
-    <embed src="XP.swf" width="600" height="400" type="application/x-shockwave-flash">
-    
+    <section id="swfViewer">
+        <object type="application/x-shockwave-flash" data="yourfile.swf" width="100%" height="100%">
+            <param name="movie" value="veryepik.swf">
+            <param name="quality" value="high">
+            <param name="wmode" value="opaque">
+        </object>
+    </section>
 </body>
 </html>
